@@ -1,13 +1,16 @@
-function countChar(string, ch)
-{
-	var result = 0;
-	for (var i = 0; i < string.length; i++)
-	{
-		if (string[i] == ch)
-			result++;
-	}
-	return result;
+function countBs(str) {
+	let char = str.length;
+	for(let i = 0; i < str.length; i++);
+	console.log(char);
 }
+countBs("floccinaucinihilipilification");
 
-console.log(countChar('BBC', 'B'));
-console.log(countChar('kakkerlak', 'k'));
+function countChar(str, n) {
+	let countCh = 0;
+	for(let i = 0; i < str.length; i++)
+		if(str.charAt(i) == n)
+			countCh += 1;
+	console.log(countCh);
+	return countCh;
+}
+countChar(" floccinaucinihilipilification", "i");

@@ -1,13 +1,20 @@
-// Проверка числа на чётность
-function isEven(n)
-{
-	if (n < 0)
-		n = -n;
-	if (!n)
-		 return true;
-	if (n == 1)
+// isEven = function(n) {
+// 	if(n % 2 == 0) {
+// 	  return true;
+// 	} else (n % 2 == 1) 
+// 	  return false;
+// }
+
+isEven = function(n) {
+	if (n % 2 == 0) {
+		return true;
+	} else if (n % 2 == 1) {
 		return false;
-	 return isEven(n - 2);
+	} else if (n < 0) {
+		return isEven(-n);
+	} else {
+		return isEven(n - 2);
+	}
 }
 
 console.log(isEven(50));

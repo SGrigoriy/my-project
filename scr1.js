@@ -1,6 +1,4 @@
 var str = "";
-
-while (str.length <= 6){
+for (; str.length <= 6; str += "#") {
     console.log(str + "#");
-    str += "#";
 }
