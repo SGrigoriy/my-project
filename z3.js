@@ -15,6 +15,7 @@ function reverseArrayPlace(arrey) {
     return arrey;
 }
 
+
 console.log(reverseArray(["A", "B", "C"]));
     var arreyValue = [1, 2, 3, 4, 5];
 console.log(reverseArrayPlace(arreyValue));

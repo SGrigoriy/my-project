@@ -14,6 +14,7 @@ Object.defineProperty(Vector.prototype, "length", {
 	}
 });
 
+
 console.log(new Vector(1, 2).plus(new Vector(2, 3)));
 console.log(new Vector(1, 2).minus(new Vector(2, 3)));
 console.log(new Vector(3, 4).length);
