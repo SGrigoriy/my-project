@@ -5,6 +5,7 @@ function reverseArray(arr) {
     }
     return reverseArr;
 }
+
 function reverseArrayPlace(arrey) {
     for(i = 0; i < Math.floor(arrey.length / 2); i++) {
         var res = arrey[i];
@@ -13,6 +14,7 @@ function reverseArrayPlace(arrey) {
     }
     return arrey;
 }
+
 console.log(reverseArray(["A", "B", "C"]));
     var arreyValue = [1, 2, 3, 4, 5];
 console.log(reverseArrayPlace(arreyValue));
