@@ -1,0 +1,29 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": { 
+    "build": "webpack" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SGrigoriy/my-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SGrigoriy/my-project/issues"
+  },
+  "homepage": "https://github.com/SGrigoriy/my-project#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {},
+  "type": "module",
+  "description": ""
+}
