@@ -213,6 +213,7 @@ var footer = document.createElement("footer");
 footer.className = "footer";
 document.body.appendChild(footer);
 
+
     var section = document.createElement("section");
     section.className = "section section_black";
     footer.appendChild(section);
