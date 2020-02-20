@@ -1,4 +1,4 @@
-import "style.css";
+import "./scss/main.scss";
 var main = document.createElement("main");
 main.className = "profile";
 document.body.appendChild(main);
@@ -40,7 +40,7 @@ document.body.appendChild(main);
         article.appendChild(ul);
         var img = document.createElement("img");
         img.className = "section__img";
-        img.src = "img/me.png";
+        img.src = "../src/img/me.png";
         section.appendChild(img);
 
     var section = document.createElement("section");
@@ -87,7 +87,7 @@ document.body.appendChild(main);
             article.appendChild(p5);
             var img = document.createElement("img");
             img.className = "biography__img";
-            img.src = "img/me1.png";
+            img.src = "../src/img/me1.png";
             section.appendChild(img);
 
     var section = document.createElement("section");
@@ -142,19 +142,6 @@ document.body.appendChild(main);
                 ul.appendChild(li1);
                 ul.appendChild(li2);
             
-            // var newUl = document.getElementsByClassName("experience");
-            // var list = 
-            
-            // var clone = list.cloneNode(true);
-            // clone.children[0].innerHTML = "Обслуживаание переферийного оборудования";
-            // clone.children[1].innerHTML = "Ремонот ПК и ноутбуков";
-            // clone.children[2].innerHTML = "Ремонт мобильных телефонов";
-            // div.appendChild(clone);
-
-            // var clone = ul.cloneNode(true);
-            // clone.children[0].in
-            // div.appendChild(clone);
-
     var section = document.createElement("section");
     section.className = "section section_white";
     main.appendChild(section);
@@ -172,7 +159,7 @@ document.body.appendChild(main);
             article.appendChild(div);
                 var img = document.createElement("img");
                 img.className = "section__img";
-                img.src = "img/electronics.png";
+                img.src = "../src/img/electronics.png";
                 div.appendChild(img);
                     var p0 = document.createElement("p");
                     p0.className = "hobbies__item";
@@ -181,7 +168,7 @@ document.body.appendChild(main);
                     div.appendChild(p0);
                 var img1 = document.createElement("img");
                 img1.className = "section__img";
-                img1.src = "img/sport.png";
+                img1.src = "../src/img/sport.png";
                 div.appendChild(img1);
                     var p1 = document.createElement("p");
                     p1.className = "hobbies__item";
@@ -193,7 +180,7 @@ document.body.appendChild(main);
             article.appendChild(div);
                 var img = document.createElement("img");
                 img.className = "section__img";
-                img.src = "img/electronics.png";
+                img.src = "../src/img/electronics.png";
                 div.appendChild(img);
                     var p0 = document.createElement("p");
                     p0.className = "hobbies__item";
@@ -202,7 +189,7 @@ document.body.appendChild(main);
                     div.appendChild(p0);
                 var img1 = document.createElement("img");
                 img1.className = "section__img";
-                img1.src = "img/sport.png";
+                img1.src = "../src/img/sport.png";
                 div.appendChild(img1);
                     var p1 = document.createElement("p");
                     p1.className = "hobbies__item";
@@ -264,7 +251,7 @@ document.body.appendChild(footer);
             footerP0.className = "contact__item";
                 var footerImg0 = document.createElement("img");
                 footerImg0.className = "footer__img";
-                footerImg0.src = "img/emailicon.png";
+                footerImg0.src = "../src/img/emailicon.png";
                 footerImg0.alt = "email: ";
                 var footerSpan0 = document.createElement("span");
                 var textSpan0 = document.createTextNode("sgp3982@gmail.com");
@@ -276,7 +263,7 @@ document.body.appendChild(footer);
             footerP1.className = "contact__item";
                 var footerImg1 = document.createElement("img");
                 footerImg1.className = "footer__img";
-                footerImg1.src = "img/emailicon.png";
+                footerImg1.src = "../src/img/emailicon.png";
                 footerImg1.alt = "phone: ";
                 var footerSpan1 = document.createElement("span");
                 var textSpan1 = document.createTextNode("+38(050)685-0218");
