@@ -1,3 +1,4 @@
+import "style.css";
 var main = document.createElement("main");
 main.className = "profile";
 document.body.appendChild(main);
