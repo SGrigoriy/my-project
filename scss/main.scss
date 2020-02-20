@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'variables';
+@import 'extend';
+@import 'mixin';
+body {
+	font-family: $font-page;
+}
+@import 'header';
+@import 'biography';
+@import 'footer';
+@import 'mobile';
