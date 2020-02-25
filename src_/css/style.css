@@ -1,0 +1,406 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.footer, .profile {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.footer-form__button, .footer-form__item, .footer-form__field {
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+  width: 100%;
+  margin: 10px 0;
+  outline: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+  padding: 50px 50px 50px 50px;
+}
+.section_black {
+  background-color: darkcyan;
+}
+.section__img {
+  width: 20%;
+  border-radius: 10%;
+  padding: 1%;
+}
+
+.main-section {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.main-article__title {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.main-article__list {
+  font-size: 20px;
+  padding: 0 0 0 100px;
+}
+.main-article_white {
+  color: #FFFFFF;
+}
+.main-article__item {
+  margin-bottom: 10px;
+}
+.main-article__item::before {
+  content: url(../img/checkicon.png);
+  margin-right: 10px;
+}
+
+.biography {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.biography__title {
+  font-size: 45px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.biography__item {
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  padding-right: 100px;
+}
+.biography__img {
+  width: 20%;
+  border-radius: 10%;
+}
+
+.section_white {
+  background-color: #FFFFFF;
+}
+.section__title {
+  font-size: 45px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.article_black {
+  color: black;
+}
+
+.experience {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+}
+.experience__list {
+  font-size: 20px;
+  margin-right: 20px;
+  line-height: 1.5em;
+}
+.experience__item::before {
+  content: url(../img/checkicon1.png);
+  margin-right: 10px;
+}
+
+.hobbies {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.hobbies__item {
+  text-align: left;
+  font-size: 20px;
+  width: 50%;
+  padding: 20px 5px 20px 5px;
+}
+
+.footer__title {
+  font-size: 45px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.footer-form__button {
+  background: darkred;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 200px;
+  cursor: pointer;
+}
+.footer-form__button:hover {
+  background: red;
+}
+
+.footer_white {
+  color: #FFFFFF;
+}
+
+.contact__item {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.footer__img {
+  padding: 0px 15px 0px 10px;
+}
+
+@media screen and (max-width: 360px) {
+  .profile, .footer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .main-section, .biography, .experience, .footer-contact, .hobbies {
+    padding: 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .main-article__title, .biography__title, .section__title, .footer__title {
+    font-size: 35px;
+  }
+
+  .main-article__list {
+    font-size: 15px;
+    padding: 5%;
+  }
+
+  .biography__item {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .biography__img {
+    display: none;
+  }
+
+  .section {
+    padding: 5%;
+  }
+
+  .experience__item {
+    font-size: 15px;
+  }
+
+  .hobbies img {
+    display: none;
+  }
+
+  .hobbies__item {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .profile, .footer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .main-section, .biography, .experience, .footer-contact, .hobbies {
+    padding: 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .main-article__title, .biography__title, .section__title, .footer__title {
+    font-size: 35px;
+  }
+
+  .main-article__list {
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .biography__item {
+    font-size: 20px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .biography__img {
+    display: none;
+  }
+
+  .section {
+    padding: 5%;
+  }
+
+  .experience {
+    align-items: flex-start;
+  }
+
+  .experience__item {
+    font-size: 20px;
+  }
+
+  .hobbies img {
+    display: none;
+  }
+
+  .hobbies__item {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profile, .footer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .main-section, .biography, .experience, .footer-contact, .hobbies {
+    padding: 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .main-article__title, .biography__title, .section__title, .footer__title {
+    font-size: 35px;
+  }
+
+  .main-article__list {
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .biography__item {
+    padding: 0;
+    text-align: left;
+  }
+
+  .biography__img {
+    display: none;
+  }
+
+  .section {
+    padding: 5%;
+  }
+
+  .experience {
+    align-items: flex-start;
+  }
+
+  .hobbies img {
+    display: none;
+  }
+
+  .hobbies__item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .profile, .footer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .section__img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .hobbies img {
+    display: none;
+  }
+
+  .hobbies__item {
+    padding: 1%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
