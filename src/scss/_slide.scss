@@ -1,4 +1,3 @@
-/* Собственно сам слайдер */
 .slider{
     max-width: 100%;
     position: relative;
@@ -7,14 +6,14 @@
     margin-bottom: 130px;
     margin: auto;
 }
-/* Картинка мастабируется по отношению к родительскому элементу */
+.slider__title {
+    text-align: center;
+}
 .slider .item img {
     object-fit: cover;
     width: 100%;
     height: 300px;
 }
-
-/* Кнопки вперед и назад */
 .slider .prev, .slider .next {
     cursor: pointer;
     position: absolute;
@@ -29,41 +28,25 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
-
-
 .slider .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
-
-/* При наведении на кнопки добавляем фон кнопок */
-
 .slider .prev:hover,
 .slider .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-/* Заголовок слайда */
 .slideText {
     position: absolute;
     color: #fff;
     font-size: 35px;
-    /* Выравнивание текста по горизонтали и по вертикали*/
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* Тень*/
     text-shadow: 1px 1px 1px #000, 0 0 1em #000;
 }
-
-
-/* Кружочки */
-
 .slider-dots {
   text-align: center;
- 
 }
 .slider-dots_item{
     cursor: pointer;
@@ -75,22 +58,16 @@
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-
 .active,
 .slider-dots_item:hover {
     background-color: #aaa;
 }
-
-
-/* Анимация слайдов */
-
 .slider .item {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
     from {
         opacity: .4
@@ -99,7 +76,6 @@
         opacity: 1
     }
 }
-
 @keyframes fade {
     from {
         opacity: .4

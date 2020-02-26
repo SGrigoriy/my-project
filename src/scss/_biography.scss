@@ -16,7 +16,7 @@
 	}
 	&__img {
 		width: 20%;
-		border-radius: 10%;
+		border-radius: 55%;
 	}
 }
 .section{
@@ -42,7 +42,7 @@
 	}
 	&__item {
 		&::before {
-			content: url(../img/checkicon1.png);
+			// content: url(../img/checkicon1.png);
 			margin-right: 10px;
 		}
 	}

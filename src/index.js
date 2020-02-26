@@ -1,3 +1,5 @@
+import "./scss/main.scss";
+
 var hidden = document.querySelector('.main-article__list');
 var open = document.querySelector('.main-btn');
 hidden.style.display = 'none'
