@@ -101,6 +101,13 @@ body {
 .main-article__item {
   margin-bottom: 10px;
 }
+                                      /* новое */
+.hidden {
+  display: none;
+}
+ .main-hidden__item {
+  padding: 0 0 0 100px;
+}
 .main-article__item::before {
   content: url(../img/checkicon.png);
   margin-right: 10px;
