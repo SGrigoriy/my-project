@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>First lesson</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <main class="profile" id="top">
+        <section class="section main-section section_black">
+            <article class="main-article main-article_white">
+                <h1 class="main-article__title">Andreeva Anastasiia</h1>
+                <ul class="main-article__list">
+                    <li class="main-article__item"><a href="#anchor1">1</a> I am 29 and am working at IT company</li>
+                    <li class="main-article__item"><a href="#anchor2">2</a> A detailed description of your product</li>
+                    <li class="main-article__item"><a href="#anchor3">3</a> Tell us about the advantages and merits</li>
+                    <li class="main-article__item"><a href="#anchor4">4</a> Associate the page with the payment system</li>
+                </ul>
+                <input class="main-btn" type="submit" value="показать"></input>
+            </article>
+            <img src="assets/picture.jpg" class="section__img" alt="">
+        </section>
+        <section class="section about-section">
+            <article class="article-about">
+                <h1 class="article-about__title article-about__title_grey">About me</h1>
+                <p class="article-about__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam
+                    incidunt in quam sapiente ut ipsum.</p>
+                <p class="article-about__item">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa
+                    vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque,
+                    unde perferendis nemo debitis dolor.</p>
+            </article>
+            <img src="assets/aboutme.jpg" class="about-section__img" alt="">
+        </section>
+
+        <section class="my-slider" id="anchor1">
+            <div class="slider">
+                <div class="item">
+                    <img src="img/slide1.jpg" alt="Первый слайд">
+                    <div class="slideText">Заголовок слайда 1</div>
+                </div>
+            
+                <div class="item">
+                    <img src="img/slide2.jpg" alt="Второй слайд">
+                    <div class="slideText">Заголовок слайда 2</div>
+                </div>
+            
+                <div class="item">
+                    <img src="img/slide3.jpg" alt="Третий слайд">
+                    <div class="slideText">Заголовок слайда 3</div>
+                </div>
+            
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
+            </div>
+            
+            <div class="slider-dots">
+                <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+            </div>
+
+        </section>
+
+        <section class="section advantages advantages_grey" id="anchor2">
+            <h1 class="advantages__title article-about__title_grey advantages__title_center">Advantages</h1>
+            <ul class="advantages__list">
+                <section class="advantages__column">
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/plus.png" class="advantages__item_size" alt="">
+                        <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet
+                            atque,
+                            impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas,
+                            maxime, quaerat porro totam, dolore minus inventore.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/plus.png" class="advantages__item_size" alt="">
+                        <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet
+                            atque,
+                            impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas,
+                            maxime, quaerat porro totam, dolore minus inventore.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/plus.png" class="advantages__item_size" alt="">
+                        <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet
+                            atque,
+                            impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas,
+                            maxime, quaerat porro totam, dolore minus inventore.</p>
+                    </li>
+                </section>
+                <section class="advantages__column">
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/plus.png" class="advantages__item_size" alt="">
+                        <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet
+                            atque,
+                            impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas,
+                            maxime,
+                            quaerat porro totam, dolore minus inventore.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/plus.png" class="advantages__item_size" alt="">
+                        <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet
+                            atque,
+                            impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas,
+                            maxime,
+                            quaerat porro totam, dolore minus inventore.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/plus.png" class="advantages__item_size" alt="">
+                        <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet
+                            atque,
+                            impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas,
+                            maxime,
+                            quaerat porro totam, dolore minus inventore.</p>
+                    </li>
+                </section>
+            </ul>
+        </section>
+        <section class="section section-photos advantages_grey">
+            <h1 class="advantages__title article-about__title_grey advantages__title_center">Photos</h1>
+            <ul class="advantages__list">
+                <section class="advantages__column">
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/photo.png" alt="">
+                        <section class="section-photos_tab">
+                            <h3 class="section-photos__title"> The description for the photo</h3>
+                            <p>Delectus dolorem vero quae beatae quasi dolor deserunt iste
+                                amet atque,
+                                impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis
+                                quas,
+                                maxime, quaerat porro totam, dolore minus inventore.</p>
+                        </section>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/photo.png" alt="">
+                        <section class="section-photos_tab">
+                            <h3 class="section-photos__title"> The description for the photo</h3>
+                            <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste
+                                amet atque,
+                                impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis
+                                quas,
+                                maxime, quaerat porro totam, dolore minus inventore.</p>
+                        </section>
+                    </li>
+                </section>
+                <section class="advantages__column">
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/photo.png" alt="">
+                        <section class="section-photos_tab">
+                            <h3 class="section-photos__title">The description for the photo</h3>
+                            <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste
+                                amet atque,
+                                impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis
+                                quas,
+                                maxime, quaerat porro totam, dolore minus inventore.</p>
+                        </section>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/photo.png">
+                        <section class="section-photos_tab">
+                            <h3 class="section-photos__title">The description for the photo</h3>
+                            <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste
+                                amet atque,
+                                impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis
+                                quas,
+                                maxime, quaerat porro totam, dolore minus inventore.</p>
+                        </section>
+                    </li>
+                </section>
+            </ul>
+        </section>
+        <section class="section section-review advantages_grey">
+            <h1 class="advantages__title article-about__title_grey advantages__title_center">Reviews</h1>
+            <ul class="advantages__list">
+                <section class="advantages__column">
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/userpic.png" class="section-photos_size">
+                        <section class="section-photos_tab section-review_grey">
+                            <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste
+                                amet atque,
+                                impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis
+                                quas,
+                                maxime, quaerat porro totam, dolore minus inventore.</p>
+                                <p class="section-photos__title">The description for the photo</p>
+                        </section>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/userpic.png" class="section-photos_size">
+                        <section class="section-photos_tab section-review_grey">
+                            <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste
+                                amet atque,
+                                impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis
+                                quas,
+                                maxime, quaerat porro totam, dolore minus inventore.</p>
+                                <p class="section-photos__title">The description for the photo</p>
+                        </section>
+                    </li>
+                </section>
+                <section class="advantages__column">
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/userpic.png" class="section-photos_size">
+                        <section class="section-photos_tab section-review_grey">
+                            <p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste
+                                amet atque,
+                                impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis
+                                quas,
+                                maxime, quaerat porro totam, dolore minus inventore.</p>
+                                <p class="section-photos__title">The description for the photo</p>
+                        </section>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="../MyFirstProject/assets/userpic.png" class="section-photos_size">
+                        <section class="section-photos_tab section-review_grey">
+                            <i><p class="advantages__item_tab">Delectus dolorem vero quae beatae quasi dolor deserunt iste
+                                amet atque,
+                                impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis
+                                quas,
+                                maxime, quaerat porro totam, dolore minus inventore.</p></i>
+                                <p class="section-photos__title">The description for the photo</p>
+                        </section>
+                    </li>
+                </section>
+            </ul>
+        </section>
+
+        <section class="section purchase" id="anchor3">
+            <h1 class="purchase__title article-about__title_grey advantages__title_center">Offers</h1>
+            <ul class="purchase-offers">
+                <li class="purchase-offers__item purchase-offers__standart section_black">
+                    <h3 class="purchase-offers__title">Standart</h3>
+                    <p class="purchase-offers__dollar">$100</p>
+                    <ol class="purchase-offers__list main-article_white">
+                        <li>1. Porro officia cumque sint deleniti;</li>
+                        <li>2. Тemo facere rem vitae odit;</li>
+                        <li>3. Cum odio, iste quia doloribus autem; </li>
+                        <li>4. Aperiam nulla ea neque.</li>
+                    </ol>
+                    <button class="purchase-offers__button">BUY</button>
+                </li>
+                <li class="purchase-offers__item purchase-offers__premium section_black">
+                    <h3 class="purchase-offers__title">Premium</h3>
+                    <p class="purchase-offers__dollar">$150</p>
+                    <ol class="purchase-offers__list main-article_white" type="1">
+                        <li>1. Porro officia cumque sint deleniti; </li>
+                        <li>2. Porro officia cumque sint deleniti; </li>
+                        <li>3. Porro officia cumque sint deleniti; </li>
+                        <li>4. Porro officia cumque sint deleniti; </li>
+                        <li>5. Porro officia cumque sint deleniti; </li>
+                        <li>6. Porro officia cumque sint deleniti; </li>
+                        <li>7. Porro officia cumque sint deleniti; </li>
+                        <li>8. Porro officia cumque sint deleniti. </li>
+                    </ol>
+                    <button class="purchase-offers__button">BUY</button>
+                    </li">
+                <li class="purchase-offers__item purchase-offers__lux section_black">
+                    <h3 class="purchase-offers__title">Lux</h3>
+                    <p class="purchase-offers__dollar">$200</p>
+                    <ol class="purchase-offers__list main-article_white" type="1">
+                        <li>1. Porro officia cumque sint deleniti; </li>
+                        <li>2. Porro officia cumque sint deleniti; </li>
+                        <li>3. Porro officia cumque sint deleniti; </li>
+                        <li>4. Porro officia cumque sint deleniti; </li>
+                        <li>5. Porro officia cumque sint deleniti; </li>
+                        <li>6. Porro officia cumque sint deleniti; </li>
+                        <li>7. Porro officia cumque sint deleniti; </li>
+                        <li>8. Porro officia cumque sint deleniti; </li>
+                        <li>9. Porro officia cumque sint deleniti; </li>
+                        <li>10. Porro officia cumque sint deleniti; </li>
+                        <li>11. Porro officia cumque sint deleniti; </li>
+                        <li>12. Porro officia cumque sint deleniti. </li>
+                    </ol>
+                    <button class="purchase-offers__button">BUY</button>
+                </li>
+            </ul>
+        </section>
+        <section class="contacts section_black main-article_white" id="anchor4">
+            <h2 class="main-article__title  advantages__title_center contacts__title">Contacts</h2>
+            <section class="contacts__place">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your name" class="contact-form__name">
+                    <input type="email" placeholder="Your email" class="contact-form__name">
+                    <input type="text" placeholder="Your message" class="contact-form__text">
+                    <button class="contact-form__button" type="submit"> SEND </button>
+                </form>
+                <section class="contacts-info">
+                    <ul>
+                        <li class="contacts-info__skype">hactehbilli</li>
+                        <li class="contacts-info__icq">231564897</li>
+                        <li class="contacts-info__email">andreeva.anastasiya.v@gmail.com</li>
+                        <li class="contacts-info__phone">+38095-358-46-97</li>
+                        <li><img src="..//MyFirstProject/assets/socialbuttons.png" alt=""></li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer class="footer-text">
+        <article>© 2020 Andreeva Anastasiia <a href="#top"> вверх </a></article>
+    </footer>
+
+<script src="index.js"></script>
+</body>
+
+</html>
