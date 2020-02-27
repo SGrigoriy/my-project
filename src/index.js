@@ -1,4 +1,4 @@
-import "./scss/main.scss";
+// import "./scss/main.scss";
 
 var hidden = document.querySelector('.main-article__list');
 var open = document.querySelector('.main-btn');
@@ -9,6 +9,21 @@ open.addEventListener("click", function() {
         hidden.style.display = 'block', open.value = 'скрыть';
     else hidden.style.display = 'none', open.value = 'показать';
 });
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute('href').substr(1);
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+}
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -43,21 +58,6 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-}
-
-const anchors = document.querySelectorAll('a[href*="#"]');
-
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const blockID = anchor.getAttribute('href').substr(1);
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-  });
 }
 
 // function opacity(element, speed){

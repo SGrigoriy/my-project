@@ -1,3 +1,8 @@
+.slider__title {
+    font-size: 45px;
+    text-align: center;
+}
+
 .slider{
     max-width: 100%;
     position: relative;
@@ -6,9 +11,7 @@
     margin-bottom: 130px;
     margin: auto;
 }
-.slider__title {
-    text-align: center;
-}
+
 .slider .item img {
     object-fit: cover;
     width: 100%;
