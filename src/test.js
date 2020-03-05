@@ -1,64 +1,81 @@
 async function test() {
     let response = await fetch('https://votesystem.mobius.team/api/tests');
+    
+    if (response.ok) {    
+        let result = await response.json();
+        let arr = [];
         
-    if (response.ok) { 
-    var result = await response.json();
+        for (i = 0; i < result.tests.length; i++) {
+            for (t = 0; t < result.tests[i].conditions.length; t++) {
+                if (result.tests[i].conditions[t].is_correct) {
+                    arr.push(result.tests[i].text + ': ' + result.tests[i].conditions[t].text + '//   ');
+                }
+            }
+        }
+        console.log(result);
+        alert(result.message);
+        alert(arr);
+        
     } else {
-    alert("Ошибка HTTP: " + response.status);
+        alert("Ошибка HTTP: " + response.status);
     }
-    
-    console.log(result);
-    
-    alert(result.message);
 }
-    
+
 test();
+
+
+
 
 async function idUser() {
     let response = await fetch('https://votesystem.mobius.team/api/result/34');
     
-    let result = await response.json();
-    let promise = new Promise((resolve, reject) => {
-        reject('Error!!!');
-    })
-        try {
-            let result = await promise;
-            alert(promise);
-        }
-        catch(e) {
+    if (response.ok) { 
+        let result = await response.json();
+        console.log(result);
+        alert(result.message);
+
+        let user = result.user.name + ': ' + result.user.result + '%';
+        alert(user);
+    } else {
+        alert("Ошибка HTTP: " + response.status);
     }
-    let user = result.user.name + ': ' + result.user.result;
-    
-    console.log(result);
-        
-    alert(result.message);
-    alert(user);
 }
 
-// idUser();
-
-async function token() {
-    let response = await fetch('https://votesystem.mobius.team/api/result/34/token');
+// async function token() {
+//     let response = await fetch('https://votesystem.mobius.team/api/result/34/token');
     
-    let result = await response.json();
-    let promise = new Promise((resolve, reject) => {
-        reject('Error!!!');
+//         let result = await response.json()
+        // console.log(result);
+        // alert(result.message);
+        // let token = result.token;
+        // alert(token);
+
+function token () {
+    fetch('https://votesystem.mobius.team/api/result/34/token')
+    .then((result) => {
+        // console.log(result);
+        return result.json();
+    }).then((result) => {
+        alert(result.message);
+        console.log(result);
+        return result.token
+    }).then((result) => {
+        let formData = new FormData();
+        formData.append("homework_done", true);
+        formData.append("token", result);
+        fetch('https://votesystem.mobius.team/api/homework/update', {
+            method: 'POST',
+            body: formData
+        }).then((result) => {
+            console.log(result);
+            return result.json();
+        }).then((result) => {
+            alert(result);
+            
+        })
+    alert(result);
     })
-    try {
-        let result = await promise;
-        alert(promise);
-    }
-    catch(e) {
-    }
-    
-    let token = result.token;
-    console.log(result);
-    
-    alert(result.message);
-    alert(token);
 }
-
-// token();
 
 let input = document.querySelector(".btn");
     input.addEventListener('click', idUser);
@@ -67,16 +84,4 @@ let input1 = document.querySelector(".btn1");
     input1.addEventListener('click', token);
 
 
-    // var user = {
-    //     username: "Tom",
-    //     age: 23
-    // };
-    // var json = JSON.stringify(user);
-    // var request = new XMLHttpRequest();
-    // request.open("POST", "http://localhost:8080/postjson.php");
-    // request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-    // request.onreadystatechange = function () {
-    //         if (request.readyState == 4 && request.status == 200)
-    //             document.getElementById("output").innerHTML=request.responseText;
-    // }
-    // request.send(json);
+   
