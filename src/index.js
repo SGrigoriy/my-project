@@ -14,9 +14,9 @@ for(let pass of generatePass()) {
     str += String.fromCharCode(pass);
 }
 
-function password(n){
+function password(n) {
     let code = "";
-    for (let i = 0; i < n; i++){
+    for (let i = 0; i < n; i++) {
         code += str.charAt(Math.floor(Math.random() * str.length));     
     }
     return code;   

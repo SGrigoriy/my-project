@@ -41,15 +41,6 @@ async function idUser() {
     }
 }
 
-// async function token() {
-//     let response = await fetch('https://votesystem.mobius.team/api/result/34/token');
-    
-//         let result = await response.json()
-        // console.log(result);
-        // alert(result.message);
-        // let token = result.token;
-        // alert(token);
-
 function token () {
     fetch('https://votesystem.mobius.team/api/result/34/token')
     .then((result) => {
