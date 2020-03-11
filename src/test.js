@@ -82,6 +82,3 @@ let input = document.querySelector(".btn");
 
 let input1 = document.querySelector(".btn1");
     input1.addEventListener('click', token);
-
-
-   
