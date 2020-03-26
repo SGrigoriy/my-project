@@ -4,19 +4,23 @@
 	<title>Resume Hrihoriy Seleznev</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </head>
 <body>
 	<!------HEADER--------->
 	<header id="top" class="headerbg">
 	    <section class="header">
 			<article class="container">
-			    <div class="logo">
+			    <div class="logo wow flipInX" data-wow-duration="2s"">
 					<a class="resume" href="#">Resume</a>
 				</div>
-				<div class="nav">
+				<div class="nav wow flipInX" data-wow-duration="2s">
 					<ul class="nav__list">
 						<li class="nav__item"><a href="#about">ABOUT</a></li>
 						<li class="nav__item"><a href="#skills">SKILLS</a></li>
@@ -31,7 +35,7 @@
 	    </section>
 	    <section class="banner">
 	    	<article class="container">
-		    	<div class="banner-info">
+		    	<div class="banner-info wow fadeInRightBig" data-wow-duration="2s" data-wow-delay="0.5s">
 			    	<div class="bannerlogo">
 						<img src="images/diamond.png">
 			      	</div>
@@ -47,7 +51,7 @@
 	</header>
  	<!------HEADER end-------->
 	<!------ABOUT--------->
-<section class="content">
+<section class="content wow fadeInRight" data-wow-offset="400" data-wow-duration="2s">
 	<div id="about" class="about">
 		<article class="container">
 				<h2 class="about__title"><span class="title-span"> </span>ABOUT<span class="title-span"> </span></h2>
@@ -70,7 +74,7 @@
 				lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.
 				sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec teltus</i></p>
 			</div>
-			<a class="arrow scroll" href="#skills"><span> </span></a>
+			<a class="arrow scroll" id="clik" href="#skills"><span> </span></a>
 		</article>
 	</div>
 </section>
@@ -81,7 +85,7 @@
 	    <div class="skills-grids">
 			<h2 class="skills__title"><span class="title-span"> </span>SKILLS<span class="title-span"> </span></h2>
 			<div id="canvas">
-				<div class="skills-grids__item">
+				<div class="skills-grids__item wow rollIn" data-wow-duration="2s" data-wow-delay="0.3s">
 					<div class="skills-grids">
 						<div class="circle" id="circles-1"></div>									
 						<h3 class="skills-grids__title">JAVASCRIPT</h3>	
@@ -101,17 +105,14 @@
 					<div class="clearfix"> </div>
 				</div>
 			</div>
-	<!-------------------------------------------------------------------------->
-			<script type="text/javascript" src="js/circles.js"></script>
-			<script type="text/javascript" src="js/circle.js"></script>
-	<!----------------------------------------------------------------------->
 		</div>
+		<a class="down scroll" href="#port"><span> </span></a>
 	</article>
-	<a class="down scroll" href="#port"><span> </span></a>
+	
 </section>
 	<!------SKILLS end--------->
 	<!------PORTFOLIO--------->
-<section id="port" class="portfolio">
+<section id="port" class="portfolio wow zoomIn" data-wow-offset="400" data-wow-duration="2s">
 	    <h2 class="portfolio__title"><span class="title-span"> </span>PORTFOLIO<span class="title-span"> </span></h2>
 	<article class="container">
 		<div class="portfolio-grids">
@@ -155,7 +156,7 @@
 </section>
   	<!------PORTFOLIO end-------->
   	<!------REVIEWS------>
-<section id="rev" class="reviews">
+<section id="rev" class="reviews wow jackInTheBox" data-wow-offset="200" data-wow-duration="2s">
 	<div class="reviews-section">
 		<h2 class="reviews__title"><span class="title-span"> </span>REVIEWS<span class="title-span"> </span></h2>
 	</div>
@@ -199,7 +200,7 @@
 </section>
   	<!-----REVIEWS end ----->
   	<!------FOOTER---------->
-<footer  id="contact" class="footer">
+<footer  id="contact" class="footer wow fadeInUp" data-wow-offset="200" data-wow-duration="2s">
     <article class="container">
 	    <h2 class="footer__title"><span class="title-span"> </span>CONTACT<span class="title-span"> </span></h2>
 		<div class="row">
@@ -233,6 +234,10 @@
 </footer>
 <script type="text/javascript" src="./js/anchor.js"></script>
 <script type="text/javascript" src="./js/slider.js"></script>
+<script type="text/javascript" src="js/circles.js"></script>
+<script type="text/javascript" src="js/circle.js"></script>
+<!-- <script type="text/javascript" src="js/hiden.js"></script> -->
+
 </body>
 </html>
  

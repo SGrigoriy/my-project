@@ -1,19 +1,22 @@
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
 html,body {
 	font-family: 'Lato', sans-serif;
 }
 .clear {
 	clear:both;
 }
-body a {
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-o-transition:0.5s all;
-	-ms-transition:0.5s all;
-	-o-transition:0.5s all;
+ 
+body {
+  -webkit-animation: fade-in 1s linear; 
+  -moz-animation: fade-in 1s linear;
+  -o-animation: fade-in 1s linear;
+  animation: fade-in 1s linear; 
 }
-body input[type="text"],body input[type="submit"],body textarea,body input[type="button"] {
-	-webkit-appearance:none;
-}
+
 /*------HEADER---------*/
 .headerbg {
 	background: url(../images/bannerbg.png);
