@@ -1,0 +1,163 @@
+.about {
+	color: $var2;
+	text-align: center;
+	background: $var3;
+	&__title {
+		color: $var10;
+		font-weight: 300;
+		margin-top: 2.5em;
+		margin: 0;
+		padding: 2em 0 1em 0;
+    }
+	&-years {
+		margin-bottom: 4em;
+		color: $var4;
+		&__item {
+			padding-top: 1em;
+			line-height: 2em;
+			width: 45%;
+			margin: 0 auto;
+        }
+		&__title {
+			margin-top: 1em;
+        }
+    }
+}
+.title-span {
+	background: $var9;
+	height: 1px;
+	width: 20%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.arrow {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bwn.png);
+	display: inline-block;
+	margin: 2em 0 4em 0;
+}
+.skills {
+	min-height: 700px;
+	background: $var3;
+    position: relative;
+    &__title {
+		color: $var10;
+		font-weight: 300;
+		margin-top: 2em;
+		text-align: center;
+		margin: 0;
+		padding: 2em;
+		&-span {
+			background: $var9;
+			height: 1px;
+			width: 20%;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+			margin-left: 10px;
+        }
+    }
+	&-grids__item {
+		padding: 3em 0;
+		@include equal-width;
+    }
+	&-grids__title {
+		color: $var10;
+		font-size: 1.8em;
+		text-align: center;
+		margin-top: 2em;
+    }
+}
+.circle {
+	color: $var10;
+}
+#canvas {
+	position: relative;
+}
+.down {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bwn.png);
+	display: inline-block;
+	margin: 2em 0 4em 0;
+	position: absolute;
+	left: 49%;
+}
+.portfolio {
+	min-height: 600px;
+	background: $var10;
+	text-align: center;
+	&__title {
+		color: $var7;
+		font-size: 2em;
+		padding: 2em 0 1em;
+		margin: 0;
+    }
+	&-grids {
+		padding-top: 2em;
+		@include equal-width;
+		&__item {
+			display: inline-block;
+        }
+    }
+	&__item {
+		margin: 3em 1em 0 1em;
+		color: $var8;
+		line-height: 25px;
+    }
+	&-img {
+		width: 55%;
+		margin-top: 1em;
+		transition: 1s linear;
+		&:hover {
+			-webkit-transform: scale(2);
+			transform: scale(1.5);
+        }
+    }
+}
+.title-span {
+	background: $var9;
+	height: 1px;
+	width: 20%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.portdown {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bwn.png);
+	display: inline-block;
+	margin: 4em 0 3em 1em;
+}
+.reviews {
+	min-height: 500px;
+	background: $var10;
+	text-align: center;
+	&__title {
+		color: $var7;
+		font-size: 2em;
+		padding: 1em 0 1em;
+		margin: 0;
+    }
+}
+.title-span {
+	background: $var9;
+	height: 1px;
+	width: 20%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.revdown {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bwn.png);
+	display: inline-block;
+	margin: 7em 0 3em 1em;
+}

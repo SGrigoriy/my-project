@@ -1,0 +1,97 @@
+html, body {
+	font-family: 'Lato', sans-serif;
+	input[type="text"], input[type="submit"], textarea, input[type="button"] {
+        -webkit-appearance: none;
+    }
+}
+.clear {
+	clear: both;
+}
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.headerbg {
+	background: url(../images/bannerbg.png);
+	min-height: 700px;
+	width: 100%;
+    background-size: cover;
+}
+.header {
+    background: #0000003d;
+}
+.container {
+	width: 70%;
+    margin: 0 auto;
+}
+.logo {
+	float: left;
+    margin: 0.5em 0 0.5em 0em;
+}
+.resume {
+	color: $var1;
+	font-size: 1.9em;
+	&:hover {
+		color: $var2;
+        text-decoration: none;
+    }
+}
+.nav {
+	float: right;
+	&__item {
+		display: inline-block;
+        margin: 1em 1.5em 0 0;
+    }
+		a {
+			color: $var1;
+			&:hover {
+				color: $var2;
+                text-decoration: none;
+            }
+        }
+}
+.banner {
+    position: absolute;
+    width: 86%;
+    &-info {
+        width: 70%;
+        float: right;
+        position: relative;
+        top: 182px;
+        left: 11%;
+        &__title {
+            color: $var5;
+            margin-left: 3em;
+            padding: 0;
+            span {
+                color: $var2;
+                font-weight: bolder;
+                font-size: 1.2em;
+            }
+            &3 {
+                color: $var3;
+                font-weight: bolder;
+                font-size: 2.5em;
+            }
+        }
+        &__item {
+            color: $var4;
+        }
+    }
+}
+.bannerlogo {
+    float: left;
+    margin-top: 0.8em;
+}
+.downarrow {
+    height: 48px;
+    width: 48px;
+    background: url(../images/down.png);
+    display: inline-block;
+    position: absolute;
+    top: 370px;
+    left: 25%;
+}

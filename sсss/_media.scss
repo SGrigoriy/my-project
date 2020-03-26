@@ -1,0 +1,360 @@
+@media (max-width:1280px) {
+    .about-years__item {
+        width: 60%;
+    }
+    .portfolio__item {
+    	margin: 2em 0em 0 0em;
+    }
+    .footer-left__title {
+    	width: 90%;
+    }
+}
+@media (max-width:1024px) {
+    .container {
+    	width: 80%;
+    }
+    .about-years__item {
+    	width: 80%;
+    }
+    .portfolio__item {
+    	margin: 2em 0em 0 0em;
+    }
+    .footer-left__title {
+    	width: 90%;
+    }
+    .banner-info {
+    	width: 80%;
+    	&__item {
+    		color: $var3;
+        }
+    	&__item {
+    		width: 90%;
+        }
+    	&__title3 {
+    		font-size: 2em;
+    		margin: 0.3em 0 0.3em;
+        }
+    	&__title {
+    		margin: 0;
+    		&3 {
+    			font-size: 1.6em;
+    			margin: 0.3em 0 0.3em;
+            }
+        }
+    	&__item {
+    		display: none;
+        }
+    }
+    .footer-form__field, .footer-form__item {
+    	width: 87%;
+    }
+    .headerbg {
+    	min-height: 591px;
+    }
+    .banner-info {
+    	top: 110px;
+    }
+    .downarrow {
+    	top: 341px;
+    	left: 30%;
+    }
+    .about-years {
+    	margin-bottom: 2em;
+    	&__item {
+    		width: 80%;
+        }
+    	&__title {
+    		margin: 0.5em 0 0 0;
+        }
+    	&__item {
+    		width: 80%;
+        }
+    	&__title {
+    		margin: 0.5em 0 0 0;
+        }
+    	&__item {
+    		margin-bottom: 2em;
+        }
+    	&__item {
+    		width: 100%;
+    		line-height: 1.6em;
+    		padding: 0.5em 0 0 0;
+        }
+    	&__title {
+    		margin: 0.5em 0 0 0;
+        }
+    }
+}
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+    .portfolio__item {
+    	margin: 2em 0em 0 0em;
+    }
+    .footer-left__title {
+    	width: 90%;
+    }
+    .footer-right {
+    	width: 90%;
+    }
+    .footer-form__field, .footer-form__item {
+    	width: 100%;
+    }
+    .headerbg {
+    	min-height: 500px;
+    }
+    .banner-info {
+    	top: 112px;
+    	width: 100%;
+    	left: 2%;
+    }
+    .downarrow {
+    	top: 241px;
+    	left: 43%;
+    }
+    .about-years {
+    	margin-bottom: 2em;
+    }
+    .banner {
+    	width: 100%;
+    	&-info {
+    		width: 80%;
+        }
+    	&-info {
+    		top: 112px;
+    		width: 100%;
+    		left: 2%;
+        }
+    	&-info {
+    		width: 80%;
+        }
+    	&-info {
+    		top: 36px;
+    		width: 100%;
+    		left: 0%;
+    		text-align: center;
+        }
+    }
+    .skills-grids {
+    	padding: 1.5em 0;
+    	&__item {
+    		display: block;
+    		text-align: center;
+        }
+    	&__item {
+    		display: block;
+    		text-align: center;
+        }
+    	&__item {
+    		padding: 1em 0;
+    		display: block;
+    		text-align: center;
+        }
+    	&__title {
+    		font-size: 1.5em;
+        }
+    }
+    .down {
+    	padding: 0;
+    	margin: 0;
+    	position: absolute;
+    	left: 47%;
+    }
+    .skills {
+    	padding: 0 0 5em 0;
+    	&__title {
+    		margin-top: 1.5em;
+        }
+    	&-grids {
+    		padding: 1.5em 0;
+        }
+    	&__title {
+    		margin-top: 1.5em;
+        }
+    	&-grids {
+    		padding: 1.5em 0;
+        }
+    	&__title {
+    		margin-top: 0.5em;
+        }
+    }
+    .portfolio-grids {
+    	padding-top: 1em;
+    	&__item {
+    		padding: 0 0 2em 0;
+        }
+    }
+    .portfolio__item {
+    	padding: 0 0 2em 0;
+    }
+    .portdown {
+        margin: 2em 0 2em 0em;
+    }
+    .footer__title {
+    	padding-top: 0.5em;
+    }
+    .footer {
+    	padding: 0 0 10em;
+    	&-left__title {
+    		width: 90%;
+        }
+    	&-form__field, &-form__item {
+    		width: 100%;
+        }
+    	&__title {
+    		padding-top: 0.5em;
+        }
+    	&-left__item {
+    		width: 100%;
+    		margin: 0.8em 0 0 0;
+        }
+    	&-form__field, &-form__item {
+    		width: 100%;
+        }
+    	&__title {
+    		padding-top: 0.5em;
+    		font-size: 1em;
+        }
+    	&-left__item {
+    		margin-bottom: 2em;
+    		width: 100%;
+    		line-height: 1.6em;
+        }
+    }
+    .row {
+    	display: block;
+    	margin: 10px;
+    }
+}
+@media (max-width:640px) {
+    .container {
+    	width: 80%;
+    }
+    .portfolio__item {
+    	margin: 2em 0em 0 0em;
+    }
+    .headerbg {
+    	min-height: 500px;
+    }
+    .downarrow {
+    	top: 241px;
+    	left: 32%;
+    }
+    .about-years {
+    	margin-bottom: 2em;
+    }
+    .banner {
+    	width: 100%;
+    }
+    .down {
+    	padding: 0;
+    	position: absolute;
+    	left: 47%;
+    }
+    .skills {
+    	padding: 0 0 5em 0;
+    }
+    .portfolio-grids {
+    	padding-top: 1em;
+    }
+    .portfolio__item {
+    	padding: 0 0 2em 0;
+    }
+    .portdown {
+    	margin: 2em 0 2em 0em;
+    }
+    .footer {
+    	padding: 0 0 10em;
+    }
+    .nav__list {
+    	margin: 0;
+    	padding: 0;
+    }
+    .nav__item {
+    	margin: 1.2em 0.5em;
+    }
+    .logo {
+    	margin: 0.3em 0 0.5em 0em;
+    }
+    .row {
+    	display: block;
+    	margin: 10px;
+    }
+}
+@media (max-width:480px) {
+    .container {
+    	width: 90%;
+    }
+    .portfolio__item {
+    	margin: 2em 0em 0 0em;
+    	display: none;
+    }
+    .headerbg {
+    	min-height: 457px;
+    }
+    .downarrow {
+    	top: 201px;
+    	left: 42%;
+    }
+    .about-years {
+    	margin-bottom: 2em;
+    }
+    .banner {
+    	width: 100%;
+    }
+    .down {
+    	padding: 0;
+    	position: absolute;
+    	left: 45%;
+    }
+    .skills {
+    	padding: 0 0 5em 0;
+    }
+    .arrow {
+    	margin: 1em 0 2em 0;
+    }
+    .portfolio-grids {
+    	padding-top: 1em;
+    	display: block;
+    }
+    .portfolio__title {
+    	font-size: 1em;
+    }
+    .portdown {
+    	margin: 1em 0 2em 0em;
+    }
+    .reviews__title {
+    	font-size: 1em;
+    }
+    .footer {
+    	padding: 0 0 6em;
+    }
+    .row {
+    	display: block;
+    	margin: 10px;
+    }
+    .nav__list {
+    	margin: 0;
+    	padding: 0;
+    }
+    .nav__item {
+    	margin: 0.8em 0.5em;
+    }
+    .logo {
+    	display: none;
+    }
+    .nav {
+    	float: none;
+    	text-align: center;
+    }
+    .bannerlogo {
+    	float: none;
+    	margin-top: 0em;
+    	text-align: center;
+    }
+    .up {
+    	bottom: 1%;
+    	left: 47%;
+    }
+}
