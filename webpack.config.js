@@ -21,7 +21,15 @@ module.exports = {
       {
         test: /\.scss$/,
         use:  [  'style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
-      }
+      },
+      {
+        test: /\.(png|jpg|jpeg|svg|gif)$/,
+        use:['file-loader']
+      },
+      {
+        test: /\.(html)$/,
+        use: ['html-loader']
+     }
     ]
   },
   plugins: [ 
