@@ -15,7 +15,7 @@
 		margin-top: 1em;
 		&__item {
 			color: $var4;
-			width: 70%;
+			width: 50%;
 			margin: 2em 0 0 0em;
 			line-height: 2em;
         }
@@ -23,6 +23,7 @@
 	&-right {
 		text-align: right;
 		margin-top: 1.3em;
+		width: 100%;
     }
 	&-form__field, &-form__item {
 		background: $var11;
@@ -94,3 +95,11 @@
 	padding: 0.8em 1em;
 	text-align: right;
 }
+.git {
+	color: #999;
+	font-size: 1em;
+	&:hover {
+		color:#ffffff;
+		text-decoration:none;
+	}
+} 

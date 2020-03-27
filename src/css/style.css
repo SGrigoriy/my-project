@@ -311,6 +311,7 @@ body {
 .footer-right {
 	text-align: right;
 	margin-top: 1.3em;
+	width: 100%;
 }
 .footer-form__field, .footer-form__item {
 	background:#170F12;
@@ -363,6 +364,14 @@ body {
 	padding:0.8em 1em;
 	text-align:right;
 }
+.git {
+	color: #999;
+	font-size: 1em;
+}
+.git:hover {
+	color:#ffffff;
+    text-decoration:none;
+} 
 @media (max-width:1280px){
  	.about-years__item {
 		width: 60%;
